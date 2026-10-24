@@ -1,6 +1,6 @@
 #pragma once
-#ifndef LIBRARY_H
-#define LIBRARY_H
+#ifndef WARNE_LIBRARY_H
+#define WARNE_LIBRARY_H
 
 #include <string>
 #include <map>
