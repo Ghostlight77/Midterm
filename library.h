@@ -14,26 +14,7 @@ int get_menu_choice();
 string get_required_text(const string& prompt);
 
 template <typename Key, typename Value>
-void display_all(const map<Key, Value>& books)
-{
-    cout << "\nLIBRARY CATALOG\n";
-    cout << "------------------------------\n";
-
-    if (books.empty()) {
-        cout << "No books found.\n";
-        return;
-    }
-
-    cout << left
-         << setw(30) << "Title"
-         << "Available Copies\n";
-
-    for (const auto& book : books) {
-        cout << left
-             << setw(30) << book.first
-             << book.second << endl;
-    }
-}
+void display_all(const map<string, int>& books);
 
 void search_book(const map<string, int>& books);
 void add_book(map<string, int>& books);
