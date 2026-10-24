@@ -13,7 +13,6 @@ int get_number(const string& prompt);
 int get_menu_choice();
 string get_required_text(const string& prompt);
 
-template <typename Key, typename Value>
 void display_all(const map<string, int>& books);
 
 void search_book(const map<string, int>& books);
