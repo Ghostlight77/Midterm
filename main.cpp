@@ -16,7 +16,7 @@ int main() {
 
             switch (choice) {
                 case 1:
-                    display_all();
+                    display_all(books);
                     break;
 
                 case 2:
