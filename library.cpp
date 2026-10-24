@@ -46,6 +46,7 @@ string get_required_text(const string& prompt) {
     }
 }
 
+
 int get_menu_choice() {
     cout << "\nLIBRARY CATALOG\n";
     cout << "------------------------------\n";
