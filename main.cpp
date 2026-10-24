@@ -1,4 +1,3 @@
-
 #include "library.h"
 #include <iostream>
 #include <stdexcept>
