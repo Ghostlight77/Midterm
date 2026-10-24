@@ -162,3 +162,25 @@ void sort_history(vector<string>& borrowing_history) {
 
     cout << "Borrowing history sorted successfully.\n";
 }
+
+void display_all(const map<string, int>& books) {
+    cout << "\nLIBRARY CATALOG\n";
+    cout << "------------------------------\n";
+
+    if (books.empty()) {
+        cout << "No books found.\n";
+        return;
+    }
+
+    int length = 30;
+
+    cout << left
+         << setw(length) << "Title"
+         << "Available Copies\n\n";
+
+    for (const auto& book : books) {
+        cout << left
+             << setw(length) << book.first
+             << book.second << endl;
+    }
+}
