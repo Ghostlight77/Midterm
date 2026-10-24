@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <limits>
 #include <algorithm>
-#include <stdexcept>
 
 using namespace std;
 
@@ -21,7 +20,7 @@ int get_number(const string& prompt) {
         cout << "Please enter a valid positive number.\n";
 
         if (cin.eof()) {
-            throw runtime_error("Input stream closed.");
+            return 8;
         }
 
         cin.clear();
@@ -36,7 +35,7 @@ string get_required_text(const string& prompt) {
         cout << prompt;
 
         if (!getline(cin, text)) {
-            throw runtime_error("Input stream closed.");
+            return "";
         }
 
         if (text.find_first_not_of(" \t") != string::npos) {
